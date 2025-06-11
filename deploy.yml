@@ -21,4 +21,4 @@ jobs:
           aws-region: us-east-1  # update if your bucket is in a different region
 
       - name: 🚀 Sync files to S3
-        run: aws s3 sync . s3://static-project-s3 --delete --exclude ".git/*" --exclude ".github/*"
+        run: aws s3 sync . s3://static-project-s3
